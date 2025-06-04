@@ -15,7 +15,7 @@ Patient clustering based on age, medical conditions, and costs Automated optimal
 
 #Usage Clone the repository
 
-1.Navigate to the project directory: cd "d:\PLP Academy\Codes\python\Machine Learning"
+1.Navigate to the project directory: cd ""
 
 2.Run the analysis: python unsupervised.py #Key Components #Data Preprocessing: Ethical anonymization Feature scaling Categorical encoding
 
