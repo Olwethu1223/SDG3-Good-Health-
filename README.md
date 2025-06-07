@@ -1,44 +1,125 @@
-# SDG3-Good-Health-
-#Healthcare Pattern Analysis for SDG 3 Machine Learning Model for Healthcare Access and Cost Analysis
+# 🧠 SDG3-Good-Health: Healthcare Data Analysis Using Machine Learning
 
-#Overview This project implements an unsupervised machine learning model to analyze healthcare patterns in support of UN Sustainable Development Goal 3 (Good Health and Well-being). The model uses K-means clustering to identify patient groups and healthcare access patterns.
+## 📌 Project Overview
 
-#Features
+This project addresses **Sustainable Development Goal 3: Good Health and Well-being** by using **machine learning** to analyze healthcare data. Our goal is to identify meaningful patterns in patient care, medical conditions, and healthcare costs to improve **resource allocation** and **patient care strategies** in healthcare systems.
 
-Patient clustering based on age, medical conditions, and costs Automated optimal cluster selection using silhouette analysis Privacy-preserving data processing Interactive visualizations of healthcare patterns Policy-relevant insights generation
+---
 
-#Prerequisites python -v 3.8+
+## 💡 Problem Statement
 
-#Dependencies #Install required packages: pip install pandas numpy scikit-learn matplotlib seaborn
+Access to quality healthcare remains a global challenge. Hospitals often face constraints in resources, and decision-makers lack data-driven tools to segment patients effectively. 
 
-#Project Structure Machine Learning/ │ ├── unsupervised.py # Main analysis script ├── archive/ │ └── healthcare_dataset.csv # Source dataset └── README.md
+We use **K-Means Clustering** to group patients based on:
+- **Age**
+- **Billing Amount**
+- **Medical Condition**
 
-#Usage Clone the repository
+This allows healthcare providers to better understand patient needs and allocate resources more effectively.
 
-1.Navigate to the project directory: cd ""
+---
 
-2.Run the analysis: python unsupervised.py #Key Components #Data Preprocessing: Ethical anonymization Feature scaling Categorical encoding
+## 🤖 Machine Learning Solution
 
-#Machine Learning: K-means clustering Silhouette analysis for optimal clustering Standardized feature scaling
+### ✳️ Model Used: K-Means Clustering (Unsupervised Learning)
 
-#Visualizations:
+**Libraries:**  
+`scikit-learn`, `pandas`, `matplotlib`, `seaborn`
 
-Healthcare cost vs. age patterns Medical condition distribution Cluster analysis
+**Steps:**
+1. **Preprocessing**  
+   - Standard scaling of numerical features  
+   - Label encoding of categorical features  
+2. **Clustering Configuration**
+   - K = 4 clusters  
+   - `random_state=42` for reproducibility  
+3. **Evaluation**
+   - Scatter plots to visualize cluster distribution  
+   - Cluster interpretation based on age, cost, and conditions  
 
-#Output The model generates: Interactive visualizations Cluster analysis reports Healthcare policy insights Patient group statistics Ethical Considerations Patient privacy protection Data anonymization Unbiased analysis Healthcare equity focus #SDG 3 Alignment This model supports SDG 3 by:
+---
 
-Identifying healthcare access patterns Analyzing cost barriers Supporting evidence-based policy Promoting healthcare equity
+## 📊 Results & Key Insights
 
-#Contributing
+- 4 distinct patient clusters were identified.  
+- Age and billing amount showed strong clustering patterns.  
+- Some clusters had significantly higher healthcare costs.  
+- Medical conditions are not uniformly distributed across age groups.  
 
-Fork the repository Create your feature branch Commit your changes Push to the branch Open a Pull Request
+---
 
-Acknowledgments UN SDG 3 Framework Healthcare Dataset Contributors Python Data Science Community
+## ⚖️ Ethical Considerations
 
-#Work Done by: Group 13
+- 🔐 **Data Privacy:** All patient data must be anonymized and securely handled.  
+- ⚖️ **Fairness:** Clustering must not cause discrimination or unequal healthcare access.  
+- 👨‍⚕️ **Human Oversight:** AI supports doctors but doesn't replace their decisions.  
+- 🔁 **Ongoing Monitoring:** Regular validation of the model is necessary to reduce bias.  
 
-Amahle Mathebula- ‪+27731535916‬
-Geofrey Killeta- ‪+254111600888‬
-Victor Muthomi- ‪+254757148346‬
-Brian Sangura- ‪+254720638389‬
-Achieng Verra- ‪+254797348617
+---
+
+## 🧭 Recommendations
+
+- Use clusters to optimize **preventive care** and **resource allocation**.  
+- Monitor healthcare cost trends for high-risk patient groups.  
+- Update the model regularly with new data to improve predictions.  
+- Ensure **transparency** in decision-making processes.  
+
+---
+
+## 🖥️ Demo & Notebook
+
+Check out the **Jupyter Notebook** for full code implementation:  
+👉 [Demo Notebook](./healthcare-clustering.ipynb)
+
+**Includes:**
+- Dataset preprocessing  
+- K-Means implementation  
+- Cluster visualization (scatter plot)  
+- Interpretation of results  
+
+---
+
+## 📌 Project Structure
+
+These are the files in the repo:
+
+```
+Good Health.ipynb           # Jupyter notebook with full analysis
+Project Article             # Written article explaining the project
+README.md                   # Project documentation
+Report.txt                  # Summary of project findings
+kmeans_cluster.png          # Visual of clustering result
+unsupervised.py             # Script of ML model implementation
+```
+
+---
+
+## 👥 Group 13 – Contributors
+
+- Amahle Mathebula  
+- Victor Muthomi  
+- Geofrey Killeta  
+- Brian Sangura  
+- Achieng Verra  
+
+---
+
+## 📎 SDG Alignment
+
+This project supports the UN's **Sustainable Development Goal 3**:  
+> _"Ensure healthy lives and promote well-being for all at all ages."_  
+
+By enabling data-driven patient insights, this solution contributes to **universal health coverage**, **cost reduction**, and **targeted care**.
+
+---
+
+## 🛠️ Requirements
+
+```bash
+python >= 3.8  
+pandas  
+scikit-learn  
+matplotlib  
+seaborn  
+```
+
