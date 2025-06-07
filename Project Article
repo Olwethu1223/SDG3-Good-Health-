@@ -1,0 +1,53 @@
+Project Title: Healthcare Data Analysis Using Machine Learning
+SDG Goal: SDG 3 – Good Health and Well-being
+
+🌍 The Global Problem
+Health systems worldwide face challenges like rising healthcare costs, unequal access, and inefficient resource distribution. These issues often result in overwhelmed hospitals, delayed treatment, and poor health outcomes — especially in vulnerable communities.
+
+In line with Sustainable Development Goal 3: Good Health and Well-being, our project explores how machine learning can support smarter healthcare decisions, improve patient care strategies, and optimize resource allocation.
+
+🤖 AI-Driven Solution
+We built a K-Means Clustering model to segment patients based on healthcare data, including:
+
+Age
+Billing Amount
+Medical Condition
+The goal was to uncover hidden patterns in the data and divide patients into distinct groups. These insights can help:
+
+Predict which patients need high-cost care
+Tailor preventive programs for specific age groups
+Allocate hospital resources more effectively
+🧠 Machine Learning Approach
+Type: Unsupervised Learning
+Algorithm: K-Means Clustering
+Preprocessing:
+Standard scaling of numerical features (e.g., Age, Billing)
+Label encoding for medical conditions
+Model Setup: 4 clusters, random_state=42
+📊 Key Results
+The model identified 4 unique patient clusters with distinct characteristics:
+
+Cluster	Avg Age	Avg Billing	Common Condition
+0	69.3	R4,112	Asthma
+1	47.2	R2,431	Hypertension
+2	55.5	R7,744	Hypertension
+3	30.5	R5,090	Diabetes
+Insights:
+
+Older patients with asthma had moderate costs.
+Patients in their 50s with hypertension contributed to the highest billing group.
+Younger diabetics may benefit from early intervention programs.
+🧪 Ethical & Social Considerations
+🔐 Privacy
+
+All patient data was anonymized (synthetic dataset used for this demo).
+Future implementations must comply with health data protection laws.
+⚖ Fairness & Bias
+
+Grouping by age or condition must not result in discriminatory treatment.
+Models must support — not replace — healthcare professionals' decisions.
+Regular evaluation is required to ensure equity and fairness in care delivery.
+✅ Conclusion & Impact
+This project shows how AI, specifically unsupervised learning, can uncover meaningful patterns in healthcare data — offering a data-driven approach to improving health outcomes and reducing system strain.
+
+By aligning machine learning with SDG 3, we demonstrate that technology can be a powerful ally in achieving universal health and well-being.
